@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="Images/Photo-1.png" alt="HEMANTH R" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="HEMANTH R">HEMANTH R</h1>
+
+          <p class="title">RMIT student and aspiring Data Engineer </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hemanthkvt9@gmail.com" class="contact-link">hemanthkvt9@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+61425168330" class="contact-link">+61422537575</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1998-11-04">June 23, 2001</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Melbourne, Victoria, Australia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hemanth-r-78b972222/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/hemanth_gowda23?igsh=MWttbHBvbDQ4cnp5Mg%3D%3D&utm_source=qr" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <style>
+            .about-text ul {
+              list-style-type: disc;
+              padding-left: 20px;
+              margin-bottom: 15px;
+            }
+            .about-text ul ul {
+              list-style-type: circle;
+              margin-top: 5px;
+              margin-bottom: 10px;
+            }
+            .about-text li {
+              margin-bottom: 5px;
+            }
+          </style>
+          <ul>
+            <li>I've completed my undergraduate studies in Information Science.</li>
+            <li>I'm currently pursuing a Master's in Data Science at RMIT University.</li>
+            <li>I've gained experience in web development and Java programming through internships.</li>
+            <li>I'm a committed learner with a strong focus on quality.</li>
+            <li>I'm eager to apply my analytical and problem-solving capabilities to real-world data engineering challenges.</li>
+            <li>I'm well-positioned to make significant impacts in data science and engineering fields.</li>
+            <li>My Master's program focuses on:
+              <ul>
+                <li>Cutting-edge analytical techniques,</li>
+                <li>Machine learning algorithms,</li>
+                <li>Data-driven decision-making processes.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="Images/Photo-2.png" alt="data analysis icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                <p class="service-item-text">
+                  I started the analysis by gathering and cleaning data, then used statistical methods to uncover patterns and insights. This process enabled me to make informed decisions across various fields by identifying correlations and trends in the data.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="Images/Photo-3.png" alt="Data visualization icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data visualization</h4>
+
+                <p class="service-item-text">
+                  I used charts and graphs to represent data visually, aiding in the analysis of trends and patterns. It enhances the understanding of data by transforming complex datasets into clear, insightful graphics, facilitating informed decision-making and effective communication of findings.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="Images/Photo-4.png" alt="Data Architecture icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Architecture</h4>
+
+                <p class="service-item-text">
+                  I gather, store, integrate, and manage data across systems to meet business needs. It ensures that data I work with is reliable, accessible, and scalable, optimizing its flow for efficient analysis and decision-making. This structure is essential for me to effectively leverage data in driving organizational operations and strategic decisions.                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="Images/Photo-5.png" alt="Cloud Computing icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Computing</h4>
+
+                <p class="service-item-text">
+                It allows me to access and manage data and applications online rather than relying on local resources. It offers scalability, flexibility, and cost-efficiency by eliminating the need for physical hardware on-site. I use cloud services for storage, computing power, applications, and development platforms, which I can access whenever needed from anywhere with an internet connection. </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="Images/Photo-6.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="Images/Photo-7.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="Images/Photo-8.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="Images/Photo-9.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+      </article>
+
+
+
+
+
+        <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master's in Data Science, RMIT University</h4>
+
+              <span>2024 — 2026</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">B.E (IS), Atria Institute of Technology</h4>
+
+              <span>2019 — 2023</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Pre-University, Sarvodaya Pre-University College</h4>
+
+              <span>2017 — 2019</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Kendriya Vidyalaya Tumkur</h4>
+
+              <span>2007 — 2017</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Intern - Thoughtsstream Innovation Pvt Ltd </h4>
+
+              <span>Jun 2022 — Aug 2022</span>
+                                <p class="timeline-text" style="margin-bottom: 10px;">
+                                  Development Intern at Thoughtsstream Innovation Pvt Ltd, I significantly enhanced my proficiency in HTML, CSS, and JavaScript, gaining practical experience in building responsive and interactive web applications.
+                                </p>
+                                <p class="timeline-text" style="margin-bottom: 10px;">
+                                  I acquired valuable knowledge of WordPress and Hero Hosty, expanding my toolkit for content management systems and web hosting solutions. This experience allowed me to understand the full stack of web development, from front-end design to back-end functionality.
+                                </p>
+                                <p class="timeline-text" style="margin-bottom: 10px;">
+                                  Throughout the internship, I actively participated in various projects, honing my skills in web design principles, user experience optimization, and best practices in web development. I collaborated with team members to deliver high-quality web solutions, contributing to the company's digital presence and client projects.
+                                </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Project Trainee - IC solutions</h4>
+
+              <span>Aug 2020 — Aug 2020</span>
+
+              <p class="timeline-text" style="margin-bottom: 10px;">
+                During my time as a Java Intern at IC Solutions, I immersed myself in the fundamentals of Java programming, gaining a solid foundation in object-oriented programming principles and best practices.
+              </p>
+              <p class="timeline-text" style="margin-bottom: 10px;">
+                I became proficient in using Eclipse IDE for Java development, learning to leverage its powerful features for efficient coding, debugging, and project management. This experience enhanced my ability to write clean, maintainable code and improved my problem-solving skills in a professional development environment.
+              </p>
+              <p class="timeline-text">
+                Throughout the internship, I worked on various Java projects, applying my knowledge to real-world scenarios. 
+                This hands-on experience not only reinforced my theoretical understanding but also provided valuable insights into software development practices, version control, and collaborative coding techniques.
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python, SQL, Data cleansing, Data management, Object-oriented Programming, R, Unix, Microsoft office</h5>
+              </div>
+
+            </li>
+
+        </section>
+        
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="DBMS">
+              <a href="https://github.com/Hemanth-Gowda23/SELL_AND_BUY_ARGO_PRODUCTS">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Images/Photo-10.jpeg" alt="Sell and Buy Argo Products" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sell and Buy Argo Products</h3>
+
+                <p class="project-category">DBMS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Internet of Things">
+              <a href="https://github.com/Hemanth-Gowda23/Smart_Sprouts_Fuzzy_Logic_Driven_IoT_based_smart_water_management_system_for_Vertical_Farming">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Images/Photo-11.jpeg" alt="IOT" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Smart Sprouts : Fuzzy Logic Driven IoT based smart water management system for Vertical Farming</h3>
+
+                <p class="project-category">Internet of Things </p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="File Structures and Database Management">
+              <a href="https://github.com/manikantacg/Psoriasis-Detection">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Images/Photo-12.jpg" alt="Jewellery Management system" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Jewellery Management system</h3>
+
+                <p class="project-category">File Structures and Database Management</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="Web Technologies and it's applications">
+              <a href="https://github.com/Hemanth-Gowda23/Simply_Recipes">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Images/Photo-13.jpeg" alt="Simply Recipes" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Simply Recipes</h3>
+
+                <p class="project-category">Web Technologies and it's Applications </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Mobile application development">
+              <a href="https://github.com/Hemanth-Gowda23/FARMER_GO">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Images/Photo-14.jpeg" alt="Farmer Go" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Farmer Go</h3>
+
+                <p class="project-category">Mobile application development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web Technologies and it's applications 01">
+              <a href="https://github.com/manikantacg/CineAR-VR">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="Images/Photo-15.jpeg" alt="Online Course Website" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Online Course Website</h3>
+
+                <p class="project-category">Web Technologies and it's Applications (Internship Project)</p>
+
+              </a>
+            </li>
+            
+
+           
+
+            
+
+           
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.4600145229623!2d144.96808831530757!3d-37.80117257975587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad64296b4ed8137%3A0x503eeac6f6c930!2sCarlton%2C%20Victoria%203052!5e0!3m2!1sen!2sau!4v1647609115144!5m2!1sen!2sau"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Contact</h3>
+
+          <ul class="Contact Details">
+
+            <li class="Contact">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Email - hemanthkvt9@gmail.com</h5>
+              </div>
+          </ul>
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
