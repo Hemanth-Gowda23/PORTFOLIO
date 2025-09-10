@@ -415,10 +415,7 @@ main {
   gap: 16px;
 }
 
-.contact-info {
-  max-width: calc(100% - 46px);
-  width: calc(100% - 46px);
-}
+
 
 .contact-title {
   color: var(--light-gray-70);
