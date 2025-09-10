@@ -1890,25 +1890,18 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 }
 
-/* === FIX CONTACT LINKS LAYOUT === */
+/* === FIX CONTACT LINKS WRAPPING === */
+.contact-info {
+  width: 100%;                /* let it take full width */
+  max-width: 100%;            /* no shrinking */
+}
+
 .contact-info .contact-link {
+  display: block;             /* each link on its own line */
   font-size: 15px;
   color: var(--white-1);
-  word-break: break-word;
-  white-space: normal;
-  overflow-wrap: anywhere;
-  display: inline-block;
-  line-height: 1.4;
-}
-
-.contacts-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
-}
-
-@media (min-width: 768px) {
-  .contacts-list {
-    grid-template-columns: 1fr 1fr;
-  }
+  line-height: 1.5;
+  word-break: break-word;     /* break long links instead of overflowing */
+  white-space: normal;        /* allow wrapping */
+  overflow-wrap: anywhere;    /* modern browsers wrap anywhere */
 }
