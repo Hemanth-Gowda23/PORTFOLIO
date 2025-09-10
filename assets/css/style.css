@@ -404,24 +404,22 @@ main {
 
 .contacts-list {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
-  gap: 25px;  /* more breathing space */
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.contact-info {
+  min-width: 0;  /* let items shrink gracefully */
 }
 
 .contact-info .contact-link {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.6;
   white-space: normal;
   word-break: break-word;
+  overflow-wrap: anywhere;
 }
 
-
-.contact-item {
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
 
 
 
