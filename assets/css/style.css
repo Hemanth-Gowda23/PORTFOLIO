@@ -170,10 +170,16 @@ article {
   background: var(--eerie-black-2);
   border: 1px solid var(--jet);
   border-radius: 20px;
-  padding: 15px;
+  padding: 15px 20px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+  
 }
+/* shrink article padding dynamically */
+article {
+  padding-bottom: 0 !important;
+}
+
 
 .separator {
   width: 100%;
@@ -506,12 +512,16 @@ main {
 
 .about .article-title { margin-bottom: 15px; }
 
+
+
 .about-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
+  margin-bottom: 20px;   /* keeps small gap */
+  padding-bottom: 0;     /* remove extra padding */
+  max-width: 800px;      /* readable width */
+  margin-left: auto;
+  margin-right: auto;    /* center it */
 }
+
 
 .about-text p { margin-bottom: 15px; }
 
@@ -1910,4 +1920,19 @@ textarea.form-input::-webkit-resizer { display: none; }
   word-break: break-word;     /* break long links instead of overflowing */
   white-space: normal;        /* allow wrapping */
   overflow-wrap: anywhere;    /* modern browsers wrap anywhere */
+}
+/* Mobile fix for contacts layout */
+@media (max-width: 768px) {
+  .contacts-list {
+    grid-template-columns: 1fr; /* single column */
+    gap: 15px;
+  }
+
+  .contact-info .contact-link {
+    font-size: 14px;        /* improve readability */
+    line-height: 1.6;
+    white-space: normal;
+    word-break: break-word; /* break long links nicely */
+    overflow-wrap: anywhere;
+  }
 }
