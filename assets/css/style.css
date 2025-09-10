@@ -404,9 +404,17 @@ main {
 
 .contacts-list {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+  grid-template-columns: 1fr 1fr; 
+  gap: 25px;  /* more breathing space */
 }
+
+.contact-info .contact-link {
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: normal;
+  word-break: break-word;
+}
+
 
 .contact-item {
   min-width: 100%;
