@@ -1364,11 +1364,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   .separator { margin: 32px 0; }
 
   .contacts-list { gap: 20px; }
+.contact-info {
+  width: 100%;        /* let text fill the row */
+  max-width: 100%;    /* no shrinking */
+}
 
-  .contact-info {
-    max-width: calc(100% - 64px);
-    width: calc(100% - 64px);
-  }
 
 
 
